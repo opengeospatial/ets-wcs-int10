@@ -361,9 +361,7 @@
 											<scal:scaleFactor>2.0</scal:scaleFactor>
 										</scal:ScaleByFactor>
 										<int:Interpolation>
-											<int:InterpolationMethod>
-												<xsl:attribute name="interpolationMethod"><xsl:value-of select="$InterpolationSupported[1]"/></xsl:attribute>
-											</int:InterpolationMethod>
+											<int:globalInterpolation><xsl:value-of select="$InterpolationSupported[1]"/></int:globalInterpolation>
 										</int:Interpolation>
 									</wcs:Extension>
 								</wcs:GetCoverage>
